@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPHOTD tool link</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #e8f5e9; 
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .tool-container {
+            background-color: #ffffff;
+            padding: 2.5rem 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 2.25rem;
+            color: #1c1e21;
+            font-weight: 700; /* Bolder title */
+            margin-top: 0;
+            margin-bottom: 2rem;
+            display: flex; /* Helps align emoji nicely */
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem; /* Adds space between text and emoji */
+        }
+        /* Style to lighten the emoji to match the image */
+        h1 .emoji {
+            opacity: 0.5;
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: #374151; /* A slightly softer dark gray */
+            font-weight: 600; /* Semi-bold to match image */
+            border-bottom: 1px solid #e7e9ec; /* Thinner, more subtle border */
+            padding-bottom: 0.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1.25rem; /* Adjusted spacing */
+        }
+        .tool-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 16px 28px; /* Adjusted padding for better vertical centering */
+            font-size: 1rem;
+            font-weight: 500; /* Medium weight, less bold than before */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: block;
+            width: 100%;
+            text-decoration: none; 
+            box-sizing: border-box;
+        }
+        .tool-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        /* Specific style for the budget tracker button with smaller text */
+        .budget-button {
+            font-size: 0.9rem; /* Smaller font to match the image */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tool-container">
+        <!-- Main Title with styled emoji -->
+        <h1>TPHOTD tools<span class="emoji">🔧</span></h1>
+
+        <!-- Clinical Section -->
+        <h2>Clinical</h2>
+        <a href="https://tt17work.github.io/psydocumentation/" class="tool-button" target="_blank" rel="noopener noreferrer">
+            Psy Documentation Generator
+        </a>
+
+        <!-- Operation Section -->
+        <h2>Operation</h2>
+        <!-- Added a new class 'budget-button' to make the font smaller -->
+        <a href="https://script.google.com/macros/s/AKfycbxcqyxTLcv3zJWcPhHxv3UmP9dP1hMOYnX7xvMCHDmKA1ifcRFNMkqSrS6eJJzaz9E/exec" class="tool-button budget-button" target="_blank" rel="noopener noreferrer">
+            Budget tracker
+        </a>
+    </div>
+
+</body>
+</html>
