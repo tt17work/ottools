@@ -29,34 +29,33 @@
         h1 {
             font-size: 2.25rem;
             color: #1c1e21;
-            font-weight: 700; /* Bolder title */
+            font-weight: 700;
             margin-top: 0;
             margin-bottom: 2rem;
-            display: flex; /* Helps align emoji nicely */
+            display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem; /* Adds space between text and emoji */
+            gap: 0.5rem;
         }
-        /* Style to lighten the emoji to match the image */
         h1 .emoji {
             opacity: 0.5;
         }
         h2 {
             font-size: 1.75rem;
-            color: #374151; /* A slightly softer dark gray */
-            font-weight: 600; /* Semi-bold to match image */
-            border-bottom: 1px solid #e7e9ec; /* Thinner, more subtle border */
+            color: #374151;
+            font-weight: 600;
+            border-bottom: 1px solid #e7e9ec;
             padding-bottom: 0.75rem;
             margin-top: 2rem;
-            margin-bottom: 1.25rem; /* Adjusted spacing */
+            margin-bottom: 1.25rem;
         }
         .tool-button {
             background-color: #007bff;
             color: white;
             border: none;
-            padding: 16px 28px; /* Adjusted padding for better vertical centering */
+            padding: 16px 28px;
             font-size: 1rem;
-            font-weight: 500; /* Medium weight, less bold than before */
+            font-weight: 500;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
@@ -65,13 +64,16 @@
             text-decoration: none; 
             box-sizing: border-box;
         }
+        /* NEW: Adds space between adjacent buttons */
+        .tool-button + .tool-button {
+            margin-top: 1rem;
+        }
         .tool-button:hover {
             background-color: #0056b3;
             transform: translateY(-2px);
         }
-        /* Specific style for the budget tracker button with smaller text */
         .budget-button {
-            font-size: 0.9rem; /* Smaller font to match the image */
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -83,13 +85,16 @@
 
         <!-- Clinical Section -->
         <h2>Clinical</h2>
+        <!-- NEW BUTTON ADDED HERE -->
+        <a href="https://tt17work.github.io/otweb/" class="tool-button" target="_blank" rel="noopener noreferrer">
+            MBI calculator
+        </a>
         <a href="https://tt17work.github.io/psydocumentation/" class="tool-button" target="_blank" rel="noopener noreferrer">
             Psy Documentation Generator
         </a>
 
         <!-- Operation Section -->
         <h2>Operation</h2>
-        <!-- Added a new class 'budget-button' to make the font smaller -->
         <a href="https://script.google.com/macros/s/AKfycbxcqyxTLcv3zJWcPhHxv3UmP9dP1hMOYnX7xvMCHDmKA1ifcRFNMkqSrS6eJJzaz9E/exec" class="tool-button budget-button" target="_blank" rel="noopener noreferrer">
             Budget tracker
         </a>
